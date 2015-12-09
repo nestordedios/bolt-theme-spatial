@@ -14,6 +14,6 @@ theme: spatial
 record_template: record.twig
 listing_template: listing.twig
 ```
-Don't forget to clear yor cache every time you make changes.
+Don't forget to clear your cache every time you make changes.
 
 Check the screenshots folder to discover more of this theme.
