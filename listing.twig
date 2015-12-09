@@ -1,0 +1,39 @@
+{% extends 'master.twig' %}
+
+{% block headerclass %}{% endblock headerclass %}
+
+{% block main %}
+
+<section id="two" class="wrapper style2 special">
+                    <div class="container">
+                        
+                            {% setcontent pages = 'pages/latest/2' allowpaging %}
+                            {% for page in pages %}
+                                {% if loop.index is odd %}
+                                    <div class="row 150%">
+                                {% endif %}
+                                {% if page.image is defined and page.image is not empty %}
+                                    <div class="6u 12u$(xsmall)">                                                                                
+                                                <div class="image fit captioned">
+                                                    <img src="{{ image(page.image) }}" alt="" />
+                                                    <h3>{{ page.title }}</h3>
+                                                    <a href="{{ page.link }}" class="button alt small">Read More</a>
+                                                </div>
+                                    </div>
+                                {% endif %}
+                                {% if loop.index is even %}
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                            <section class="container">
+                                <div class="12u">
+                                    <div class="pager 12u">
+                                        {{ pager('', 3, '_pagination.twig' ) }}
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+</section>
+
+{% endblock main %}

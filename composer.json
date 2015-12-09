@@ -1,0 +1,27 @@
+{
+	"name": "nestordedios/bolt-theme-spatial",
+	"description": "Spatial - A simple, spacious, minimalistic design topped off with a large cover image.",
+	"type": "bolt-theme",
+	"keywords": ["theme", "spatial", "responsive", "simple", "spacious", "minimalistic"],
+	"require": {
+		"bolt/bolt": ">=2.0.0,<3.0.0"
+	},
+	"license": "CCA (Creative Commons Attribution)",
+	"authors": [
+		{
+			"name": "Nestor de Dios Fernandez",
+			"email": "nestordedios@outlook.es"
+		},
+		{
+			"name": "TEMPLATED",
+			"homepage": "www.templated.co"
+		}
+	],
+	"extra": {
+		"bolt-screenshots": [
+			"screenshots/screenshot1.png",
+			"screenshots/screenshot2.png",
+			"screenshots/screenshot3.png"
+		]
+	}
+}

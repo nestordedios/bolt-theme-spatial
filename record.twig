@@ -1,0 +1,22 @@
+{% extends 'master.twig' %}
+
+{% block bodyclass %}{% endblock bodyclass %}
+{% block headerclass %}{% endblock headerclass %}
+
+{% block main %}
+<section id="main" class="wrapper">
+                <div class="container">
+
+                    <header class="major special">
+                        <h2>{{ record.title }}</h2>
+                        <p>{{ record.title }}</p>
+                    </header>
+
+                    <a href="#" class="image fit"><img src="{{ image(record.image) }}" alt="" /></a>
+                    <p>{{ record.teaser }}</p>
+                    <p>{{ record.body }}</p>
+                    <p>{{ record.title }}</p>
+
+                </div>
+            </section>
+{% endblock main %}
