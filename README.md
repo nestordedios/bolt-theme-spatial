@@ -1,4 +1,4 @@
-## Solarize by TEMPLATED 
+## Spatial by TEMPLATED 
 ===================
 
 ![Preview](screenshots/screenshot1.png)
