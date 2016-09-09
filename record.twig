@@ -12,7 +12,9 @@
                         <p>{{ record.title }}</p>
                     </header>
 
-                    <a href="#" class="image fit"><img src="{{ image(record.image) }}" alt="" /></a>
+                    {% if record.image is not empty %}
+                        <a href="#" class="image fit"><img src="{{ image(record.image) }}" alt="" /></a>
+                    {% endif %}
                     <p>{{ record.teaser }}</p>
                     <p>{{ record.body }}</p>
                     <p>{{ record.title }}</p>
